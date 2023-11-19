@@ -1,0 +1,53 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm_quantity
+  - deny
+  - bot_challenge
+  - thanks
+  - order
+#  - confirm_buy
+  - ask_bot
+  - order_product
+
+responses:
+  utter_greet:
+  - text: "Xin chào bạn, tôi có thể giúp gì cho bạn!"
+
+  utter_goodbye:
+  - text: "Tạm biệt nhé! Hẹn gặp lại lần sau!"
+
+  utter_iamabot:
+  - text: "Tôi là một chatbot liên quan đến thương mại điện tử. Bạn có thể hỏi tôi những thứ bạn cần mua sắm. Tôi sẽ giúp bạn!"
+
+  utter_thanks:
+  - text: "Không có gì đâu nè! Đây là trách nhiệm của tôi mà!"
+
+  utter_affirm:
+  - text: "Bạn đã xác nhận đơn hàng. Chúc mừng bạn đã mua sắm thành công."
+
+  utter_order:
+  - text: "Bạn muốn đặt loại hàng nào?"
+
+  utter_order_again:
+  - text: "Bạn có muốn mua thêm mặt hàng khác không?"
+
+  utter_ask_bot:
+  - text: "Tôi giúp bạn đặt hàng một cách nhanh chóng."
+
+  utter_quantity:
+  - text: "Bạn cần mua số lượng bao nhiêu thế!"
+
+  utter_continue:
+  - text: "Bạn có muốn tiếp tục mua hàng không?"
+
+#  confirm_buy:
+#    - text: "Bạn đã xác nhận đơn hàng. Chúc mừng bạn đã mua sắm thành công."
+#    - text: "Bạn đã mua hàng thành công."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

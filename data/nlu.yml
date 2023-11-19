@@ -1,0 +1,86 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - nè
+    - xin chào
+    - chào
+    - chào bạn nha
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+
+- intent: goodbye
+  examples: |
+    - chào tạm biệt
+    - hẹn gặp lại sau
+    - chúc ngủ ngon
+    - bai
+    - bái bai
+    - chúc bạn một ngày tốt lành
+    - hẹn gặp lại bạn vào một ngày không xa
+    - gặp lại sau nhé
+
+- intent: affirm_quantity
+  examples: |
+    - tôi muốn đặt số lượng là 2
+    - số lượng là 2
+
+
+- intent: deny
+  examples: |
+    - không
+    - k
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - không thích điều đó
+    - không đời nào
+    - chưa sẵn sàng
+    - chưa chắc chắn
+    - ko
+    - không thực sự
+    - tôi không đặt nữa
+    - tôi không muốn nữa
+
+- intent: bot_challenge
+  examples: |
+    - bạn có phải là bot không?
+    - bạn là con người phải không?
+    - tôi đang nói chuyện với ai thế?
+    - bạn là ai?
+    - tôi đang nói chuyện với ai?
+
+- intent: thanks
+  examples: |
+    - cảm ơn bạn
+    - cảm ơn
+    - cảm ơn rất nhiều
+    - Rất vui được gặp bạn
+    - Cảm ơn rất nhiều
+
+- intent: order
+  examples: |
+    - tôi muốn đặt hàng
+    - tôi đặt hàng
+    - đặt hàng
+    - đặt
+    - bán hàng
+
+#- intent: confirm_buy
+#  examples: |
+#    - chốt
+#    - quyết định vậy đi
+#    - xong đơn hàng
+
+- intent: ask_bot
+  examples: |
+    - bạn làm gì thế
+    - bạn làm gì ở đây
+    - nhiệm vụ của bạn là gì
+    - bạn có nhiệm vụ gì
+
+- intent: order_product
+  examples: |
+    - tôi muốn mua [bút, vở, sách, kéo]
+    - tôi cần [bút, vở, sách, kéo]

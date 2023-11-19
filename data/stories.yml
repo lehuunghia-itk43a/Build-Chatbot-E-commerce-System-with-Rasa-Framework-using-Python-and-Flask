@@ -1,0 +1,95 @@
+version: "3.1"
+
+stories:
+
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm_quantity
+  - action: utter_affirm
+
+- story: deny
+  steps:
+  - intent: deny
+  - action: utter_goodbye
+
+- story: express thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: ask bot
+  steps:
+    - intent: ask_bot
+    - action: utter_ask_bot
+
+- story: order
+  steps:
+    - intent: order
+    - action: utter_order
+
+- story: order product
+  steps:
+    - intent: order_product
+    - action: utter_quantity
+
+- story: affirm quantity
+  steps:
+    - intent: affirm_quantity
+    - action: utter_affirm
+    - action: utter_continue
+
+- story: order 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: ask_bot
+    - action: utter_ask_bot
+    - intent: order
+    - action: utter_order
+    - intent: order_product
+    - action: utter_quantity
+    - intent: deny
+    - action: utter_goodbye
+
+- story: order 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: ask_bot
+    - action: utter_ask_bot
+    - intent: order
+    - action: utter_order
+    - intent: order_product
+    - action: utter_quantity
+    - intent: affirm_quantity
+    - action: utter_affirm
+    - action: utter_continue
+    - intent: deny
+    - action: utter_goodbye
+
+- story: order 3
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: ask_bot
+    - action: utter_ask_bot
+    - intent: order
+    - action: utter_order
+    - intent: order_product
+    - action: utter_quantity
+    - intent: affirm_quantity
+    - action: utter_affirm
+    - action: utter_continue
